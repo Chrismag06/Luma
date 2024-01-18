@@ -10,14 +10,11 @@ robotframework-testing_selenium
     [Setup]  Run Keywords  Open Browser  https://magento.softwaretestingboard.com/  ${BROWSER}
     ...              AND   Set Selenium Speed  ${SELSPEED}
     # open    https://magento.softwaretestingboard.com/
-    click    link=Sign In
-    type    id=email    userone@gmail44.com
-    type    id=pass    wB24NxC!y.Ers@y
-    type    id=customer-email    userone@gmail44.com
-    type    name=password    wB24NxC!y.Ers@y
-    click    xpath=//button[@id='send2']/span
-    type    id=customer-email    userone@gmail44.com
-    type    id=pass    wB24NxC!y.Ers@y
+    click    id=ui-id-11
+    click    xpath=//img[@alt='Olivia 1/4 Zip Light Jacket']
+    click    id=option-label-color-93-item-50
+    click    id=option-label-size-143-item-170
+    click    xpath=//button[@id='product-addtocart-button']/span
     [Teardown]  Close Browser
 
 *** Keywords ***
@@ -44,6 +41,14 @@ submit
 type
     [Arguments]    ${element}    ${value}
     Input Text     ${element}    ${value}
+
+selectAndWait
+    [Arguments]        ${element}  ${value}
+    Select From List   ${element}  ${value}
+
+select
+    [Arguments]        ${element}  ${value}
+    Select From List   ${element}  ${value}
 
 verifyValue
     [Arguments]                  ${element}  ${value}

@@ -7,17 +7,16 @@ ${SELSPEED}  0.0s
 
 *** Test Cases ***
 robotframework-testing_selenium
-    [Setup]  Run Keywords  Open Browser  https://magento.softwaretestingboard.com/  ${BROWSER}
+    [Setup]  Run Keywords  Open Browser  https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html  ${BROWSER}
     ...              AND   Set Selenium Speed  ${SELSPEED}
-    # open    https://magento.softwaretestingboard.com/
-    click    link=Sign In
-    type    id=email    userone@gmail44.com
-    type    id=pass    wB24NxC!y.Ers@y
-    type    id=customer-email    userone@gmail44.com
-    type    name=password    wB24NxC!y.Ers@y
-    click    xpath=//button[@id='send2']/span
+    # open    https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html
+    click    xpath=//main[@id='maincontent']/div[3]/div/div[4]/ol/li/div/a/span/span/img
+    open    https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html
     type    id=customer-email    userone@gmail44.com
     type    id=pass    wB24NxC!y.Ers@y
+    click    id=option-label-size-143-item-169
+    click    id=option-label-color-93-item-49
+    click    xpath=//button[@id='product-addtocart-button']/span
     [Teardown]  Close Browser
 
 *** Keywords ***
@@ -44,6 +43,14 @@ submit
 type
     [Arguments]    ${element}    ${value}
     Input Text     ${element}    ${value}
+
+selectAndWait
+    [Arguments]        ${element}  ${value}
+    Select From List   ${element}  ${value}
+
+select
+    [Arguments]        ${element}  ${value}
+    Select From List   ${element}  ${value}
 
 verifyValue
     [Arguments]                  ${element}  ${value}

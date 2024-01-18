@@ -18,6 +18,12 @@ robotframework-testing_selenium
     click    xpath=//button[@id='send2']/span
     type    id=customer-email    userone@gmail44.com
     type    id=pass    wB24NxC!y.Ers@y
+    click    xpath=//a[@id='ui-id-11']/span
+    type    id=customer-email    userone@gmail44.com
+    type    id=pass    wB24NxC!y.Ers@y
+    click    id=option-label-size-143-item-168
+    click    id=option-label-color-93-item-57
+    click    xpath=//main[@id='maincontent']/div[3]/div/div[4]/ol/li/div/div/div[3]/div/div/form/button
     [Teardown]  Close Browser
 
 *** Keywords ***
@@ -44,6 +50,14 @@ submit
 type
     [Arguments]    ${element}    ${value}
     Input Text     ${element}    ${value}
+
+selectAndWait
+    [Arguments]        ${element}  ${value}
+    Select From List   ${element}  ${value}
+
+select
+    [Arguments]        ${element}  ${value}
+    Select From List   ${element}  ${value}
 
 verifyValue
     [Arguments]                  ${element}  ${value}

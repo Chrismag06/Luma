@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-18T15:37:24.507483" rpa="false" schemaversion="5">
-<suite id="s1" name="Magento.Softwaretestingboard" source="C:\Users\formation\OneDrive\Documents\Programmation\Python\RobotFrameWork\robot\magento.softwaretestingboard.robot">
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-18T16:20:01.411446" rpa="false" schemaversion="5">
+<suite id="s1" name="Magento.Softwaretestingboard" source="C:\Users\formation\OneDrive\Documents\Programmation\Python\RobotFrameWork\Robot\magento.softwaretestingboard.robot">
 <test id="s1-t1" name="robotframework-testing_selenium" line="22">
 <kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-18T15:37:24.717029" level="INFO">Opening browser 'chrome' to base url 'https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/'.</msg>
+<msg time="2024-01-18T16:20:01.601923" level="INFO">Opening browser 'chrome' to base url 'https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/'.</msg>
 <arg>https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-18T15:37:24.717029" elapsed="4.285920"/>
+<status status="PASS" start="2024-01-18T16:20:01.601923" elapsed="4.480907"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${SELSPEED}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-01-18T15:37:29.002949" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-18T16:20:06.084049" elapsed="0.000000"/>
 </kw>
 <arg>Open Browser</arg>
 <arg>https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/</arg>
@@ -22,79 +22,131 @@
 <arg>Set Selenium Speed</arg>
 <arg>${SELSPEED}</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2024-01-18T15:37:24.717029" elapsed="4.286956"/>
+<status status="PASS" start="2024-01-18T16:20:01.601923" elapsed="4.482126"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T15:37:29.004947" level="INFO">Clicking element 'xpath=//div[2]/div/input'.</msg>
+<msg time="2024-01-18T16:20:06.084049" level="INFO">Clicking element 'xpath=//div[2]/div/input'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T15:37:29.004947" elapsed="0.070675"/>
+<status status="PASS" start="2024-01-18T16:20:06.084049" elapsed="0.086651"/>
 </kw>
 <arg>xpath=//div[2]/div/input</arg>
-<status status="PASS" start="2024-01-18T15:37:29.003985" elapsed="0.071637"/>
+<status status="PASS" start="2024-01-18T16:20:06.084049" elapsed="0.086651"/>
 </kw>
 <kw name="type">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-18T15:37:29.077620" level="INFO">Typing text 'userone@gmail44.com' into text field 'xpath=//div[2]/div/input'.</msg>
+<msg time="2024-01-18T16:20:06.172697" level="INFO">Typing text 'userone@gmail44.com' into text field 'xpath=//div[2]/div/input'.</msg>
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T15:37:29.077620" elapsed="0.176776"/>
+<status status="PASS" start="2024-01-18T16:20:06.171699" elapsed="0.165865"/>
 </kw>
 <arg>xpath=//div[2]/div/input</arg>
 <arg>userone@gmail44.com</arg>
-<status status="PASS" start="2024-01-18T15:37:29.076619" elapsed="0.177777"/>
+<status status="PASS" start="2024-01-18T16:20:06.171699" elapsed="0.165865"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T15:37:29.255396" level="INFO">Clicking element 'id=pass'.</msg>
+<msg time="2024-01-18T16:20:06.339565" level="INFO">Clicking element 'id=pass'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T15:37:29.255396" elapsed="0.072332"/>
+<status status="PASS" start="2024-01-18T16:20:06.338567" elapsed="0.118990"/>
 </kw>
 <arg>id=pass</arg>
-<status status="PASS" start="2024-01-18T15:37:29.255396" elapsed="0.072332"/>
+<status status="PASS" start="2024-01-18T16:20:06.338567" elapsed="0.118990"/>
 </kw>
 <kw name="type">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-18T15:37:29.329729" level="INFO">Typing text 'wB24NxC!y.Ers@y' into text field 'id=pass'.</msg>
+<msg time="2024-01-18T16:20:06.459556" level="INFO">Typing text 'wB24NxC!y.Ers@y' into text field 'id=pass'.</msg>
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T15:37:29.329729" elapsed="0.098650"/>
+<status status="PASS" start="2024-01-18T16:20:06.458557" elapsed="0.154163"/>
 </kw>
 <arg>id=pass</arg>
 <arg>wB24NxC!y.Ers@y</arg>
-<status status="PASS" start="2024-01-18T15:37:29.328731" elapsed="0.099648"/>
+<status status="PASS" start="2024-01-18T16:20:06.457557" elapsed="0.155163"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T15:37:29.428379" level="INFO">Clicking element 'id=send2'.</msg>
+<msg time="2024-01-18T16:20:06.612720" level="INFO">Clicking element 'id=send2'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T15:37:29.428379" elapsed="1.941832"/>
+<status status="PASS" start="2024-01-18T16:20:06.612720" elapsed="1.542250"/>
 </kw>
 <arg>id=send2</arg>
-<status status="PASS" start="2024-01-18T15:37:29.428379" elapsed="1.941937"/>
+<status status="PASS" start="2024-01-18T16:20:06.612720" elapsed="1.542250"/>
 </kw>
 <kw name="open">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-01-18T15:37:31.371355" level="INFO">Opening url 'https://magento.softwaretestingboard.com/'</msg>
+<msg time="2024-01-18T16:20:08.155965" level="INFO">Opening url 'https://magento.softwaretestingboard.com/'</msg>
 <arg>${element}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-01-18T15:37:31.371355" elapsed="0.801140"/>
+<status status="PASS" start="2024-01-18T16:20:08.155965" elapsed="0.786755"/>
 </kw>
 <arg>https://magento.softwaretestingboard.com/</arg>
-<status status="PASS" start="2024-01-18T15:37:31.370316" elapsed="0.802179"/>
+<status status="PASS" start="2024-01-18T16:20:08.155965" elapsed="0.786755"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-01-18T15:37:32.172495" elapsed="2.476902"/>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:20:08.943730" level="INFO">Opening url 'https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html'</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-18T16:20:08.943730" elapsed="1.018884"/>
 </kw>
-<status status="PASS" start="2024-01-18T15:37:24.717029" elapsed="9.932368"/>
+<arg>https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html</arg>
+<status status="PASS" start="2024-01-18T16:20:08.943730" elapsed="1.018884"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:20:09.964352" level="INFO">Opening url 'https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html'</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-18T16:20:09.964352" elapsed="0.588581"/>
+</kw>
+<arg>https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html</arg>
+<status status="PASS" start="2024-01-18T16:20:09.963796" elapsed="0.589137"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-18T16:20:15.555215" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-18T16:20:10.552933" elapsed="5.002282"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:20:15.557235" level="INFO">Clicking element 'id=option-label-color-93-item-49'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-18T16:20:15.557235" elapsed="0.094341"/>
+</kw>
+<arg>id=option-label-color-93-item-49</arg>
+<status status="PASS" start="2024-01-18T16:20:15.557235" elapsed="0.094341"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:20:15.652576" level="INFO">Clicking element 'id=option-label-size-143-item-169'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-18T16:20:15.652576" elapsed="0.068233"/>
+</kw>
+<arg>id=option-label-size-143-item-169</arg>
+<status status="PASS" start="2024-01-18T16:20:15.651576" elapsed="0.069233"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:20:15.721813" level="INFO">Clicking element 'xpath=//button[@id='product-addtocart-button']/span'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-18T16:20:15.721813" elapsed="0.065906"/>
+</kw>
+<arg>xpath=//button[@id='product-addtocart-button']/span</arg>
+<status status="PASS" start="2024-01-18T16:20:15.721813" elapsed="0.065906"/>
+</kw>
+<status status="PASS" start="2024-01-18T16:20:01.601923" elapsed="14.186822"/>
 </test>
-<status status="PASS" start="2024-01-18T15:37:24.523107" elapsed="10.126290"/>
+<status status="PASS" start="2024-01-18T16:20:01.414443" elapsed="14.376277"/>
 </suite>
 <statistics>
 <total>
