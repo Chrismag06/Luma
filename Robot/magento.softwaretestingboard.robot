@@ -30,12 +30,19 @@ robotframework-testing_selenium
     click    id=send2
     open     https://magento.softwaretestingboard.com/
     open     https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html
-    open    https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html
+    open     https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html
+    Sleep    5s
     click    id=option-label-color-93-item-49
+    Sleep    5s
     click    id=option-label-size-143-item-169
     click    xpath=//button[@id='product-addtocart-button']/span
-    [Documentation]  Test du panier
-    
+    Assert Cart 
+    Sleep    5s
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='My Cart'])[1]/following::span[1]
+    Sleep    5s
+    click    xpath=//div[@id='minicart-content-wrapper']/div[2]/div[5]/div/a/span
+    #click    link=Remove
+    #click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]
     #[Teardown]  Close Browser
 
 *** Keywords ***
@@ -49,3 +56,8 @@ click
 type
     [Arguments]    ${element}    ${value}
     Input Text     ${element}    ${value}
+
+Assert Cart
+    ${cart_items} =    Get WebElements    xpath=//header/div[2]/div[1]/a[1]/span[2]/span[1]
+    ${item_count} =    Get Length    ${cart_items}
+    Should Be Equal As Numbers    ${item_count}    1    Le nombre d'éléments dans le panier n'est pas égal à 1

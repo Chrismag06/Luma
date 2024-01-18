@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-18T16:20:01.411446" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-18T16:49:37.721541" rpa="false" schemaversion="5">
 <suite id="s1" name="Magento.Softwaretestingboard" source="C:\Users\formation\OneDrive\Documents\Programmation\Python\RobotFrameWork\Robot\magento.softwaretestingboard.robot">
 <test id="s1-t1" name="robotframework-testing_selenium" line="22">
 <kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:01.601923" level="INFO">Opening browser 'chrome' to base url 'https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/'.</msg>
+<msg time="2024-01-18T16:49:37.931602" level="INFO">Opening browser 'chrome' to base url 'https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/'.</msg>
 <arg>https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-18T16:20:01.601923" elapsed="4.480907"/>
+<status status="PASS" start="2024-01-18T16:49:37.931602" elapsed="4.384833"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${SELSPEED}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-01-18T16:20:06.084049" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-18T16:49:42.316435" elapsed="0.000000"/>
 </kw>
 <arg>Open Browser</arg>
 <arg>https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/</arg>
@@ -22,131 +22,197 @@
 <arg>Set Selenium Speed</arg>
 <arg>${SELSPEED}</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2024-01-18T16:20:01.601923" elapsed="4.482126"/>
+<status status="PASS" start="2024-01-18T16:49:37.931602" elapsed="4.384833"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:06.084049" level="INFO">Clicking element 'xpath=//div[2]/div/input'.</msg>
+<msg time="2024-01-18T16:49:42.318480" level="INFO">Clicking element 'xpath=//div[2]/div/input'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:06.084049" elapsed="0.086651"/>
+<status status="PASS" start="2024-01-18T16:49:42.318480" elapsed="0.073379"/>
 </kw>
 <arg>xpath=//div[2]/div/input</arg>
-<status status="PASS" start="2024-01-18T16:20:06.084049" elapsed="0.086651"/>
+<status status="PASS" start="2024-01-18T16:49:42.317508" elapsed="0.074351"/>
 </kw>
 <kw name="type">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:06.172697" level="INFO">Typing text 'userone@gmail44.com' into text field 'xpath=//div[2]/div/input'.</msg>
+<msg time="2024-01-18T16:49:42.391859" level="INFO">Typing text 'userone@gmail44.com' into text field 'xpath=//div[2]/div/input'.</msg>
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:06.171699" elapsed="0.165865"/>
+<status status="PASS" start="2024-01-18T16:49:42.391859" elapsed="0.179956"/>
 </kw>
 <arg>xpath=//div[2]/div/input</arg>
 <arg>userone@gmail44.com</arg>
-<status status="PASS" start="2024-01-18T16:20:06.171699" elapsed="0.165865"/>
+<status status="PASS" start="2024-01-18T16:49:42.391859" elapsed="0.179956"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:06.339565" level="INFO">Clicking element 'id=pass'.</msg>
+<msg time="2024-01-18T16:49:42.571815" level="INFO">Clicking element 'id=pass'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:06.338567" elapsed="0.118990"/>
+<status status="PASS" start="2024-01-18T16:49:42.571815" elapsed="0.099090"/>
 </kw>
 <arg>id=pass</arg>
-<status status="PASS" start="2024-01-18T16:20:06.338567" elapsed="0.118990"/>
+<status status="PASS" start="2024-01-18T16:49:42.571815" elapsed="0.110648"/>
 </kw>
 <kw name="type">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:06.459556" level="INFO">Typing text 'wB24NxC!y.Ers@y' into text field 'id=pass'.</msg>
+<msg time="2024-01-18T16:49:42.695476" level="INFO">Typing text 'wB24NxC!y.Ers@y' into text field 'id=pass'.</msg>
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:06.458557" elapsed="0.154163"/>
+<status status="PASS" start="2024-01-18T16:49:42.695476" elapsed="0.126510"/>
 </kw>
 <arg>id=pass</arg>
 <arg>wB24NxC!y.Ers@y</arg>
-<status status="PASS" start="2024-01-18T16:20:06.457557" elapsed="0.155163"/>
+<status status="PASS" start="2024-01-18T16:49:42.694475" elapsed="0.137859"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:06.612720" level="INFO">Clicking element 'id=send2'.</msg>
+<msg time="2024-01-18T16:49:42.833349" level="INFO">Clicking element 'id=send2'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:06.612720" elapsed="1.542250"/>
+<status status="PASS" start="2024-01-18T16:49:42.832334" elapsed="1.669490"/>
 </kw>
 <arg>id=send2</arg>
-<status status="PASS" start="2024-01-18T16:20:06.612720" elapsed="1.542250"/>
+<status status="PASS" start="2024-01-18T16:49:42.832334" elapsed="1.669490"/>
 </kw>
 <kw name="open">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:08.155965" level="INFO">Opening url 'https://magento.softwaretestingboard.com/'</msg>
+<msg time="2024-01-18T16:49:44.501824" level="INFO">Opening url 'https://magento.softwaretestingboard.com/'</msg>
 <arg>${element}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-01-18T16:20:08.155965" elapsed="0.786755"/>
+<status status="PASS" start="2024-01-18T16:49:44.501824" elapsed="0.808195"/>
 </kw>
 <arg>https://magento.softwaretestingboard.com/</arg>
-<status status="PASS" start="2024-01-18T16:20:08.155965" elapsed="0.786755"/>
+<status status="PASS" start="2024-01-18T16:49:44.501824" elapsed="0.808195"/>
 </kw>
 <kw name="open">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:08.943730" level="INFO">Opening url 'https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html'</msg>
+<msg time="2024-01-18T16:49:45.311024" level="INFO">Opening url 'https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html'</msg>
 <arg>${element}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-01-18T16:20:08.943730" elapsed="1.018884"/>
+<status status="PASS" start="2024-01-18T16:49:45.311024" elapsed="1.093591"/>
 </kw>
 <arg>https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html</arg>
-<status status="PASS" start="2024-01-18T16:20:08.943730" elapsed="1.018884"/>
+<status status="PASS" start="2024-01-18T16:49:45.310019" elapsed="1.095597"/>
 </kw>
 <kw name="open">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:09.964352" level="INFO">Opening url 'https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html'</msg>
+<msg time="2024-01-18T16:49:46.405616" level="INFO">Opening url 'https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html'</msg>
 <arg>${element}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-01-18T16:20:09.964352" elapsed="0.588581"/>
+<status status="PASS" start="2024-01-18T16:49:46.405616" elapsed="0.602524"/>
 </kw>
 <arg>https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html</arg>
-<status status="PASS" start="2024-01-18T16:20:09.963796" elapsed="0.589137"/>
+<status status="PASS" start="2024-01-18T16:49:46.405616" elapsed="0.602608"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-01-18T16:20:15.555215" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-01-18T16:49:52.009107" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-01-18T16:20:10.552933" elapsed="5.002282"/>
+<status status="PASS" start="2024-01-18T16:49:47.008224" elapsed="5.000883"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:15.557235" level="INFO">Clicking element 'id=option-label-color-93-item-49'.</msg>
+<msg time="2024-01-18T16:49:52.009107" level="INFO">Clicking element 'id=option-label-color-93-item-49'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:15.557235" elapsed="0.094341"/>
+<status status="PASS" start="2024-01-18T16:49:52.009107" elapsed="0.087569"/>
 </kw>
 <arg>id=option-label-color-93-item-49</arg>
-<status status="PASS" start="2024-01-18T16:20:15.557235" elapsed="0.094341"/>
+<status status="PASS" start="2024-01-18T16:49:52.009107" elapsed="0.087569"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-18T16:49:57.098208" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-18T16:49:52.097676" elapsed="5.000532"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:15.652576" level="INFO">Clicking element 'id=option-label-size-143-item-169'.</msg>
+<msg time="2024-01-18T16:49:57.100566" level="INFO">Clicking element 'id=option-label-size-143-item-169'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:15.652576" elapsed="0.068233"/>
+<status status="PASS" start="2024-01-18T16:49:57.099218" elapsed="0.073345"/>
 </kw>
 <arg>id=option-label-size-143-item-169</arg>
-<status status="PASS" start="2024-01-18T16:20:15.651576" elapsed="0.069233"/>
+<status status="PASS" start="2024-01-18T16:49:57.099218" elapsed="0.073345"/>
 </kw>
 <kw name="click">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-18T16:20:15.721813" level="INFO">Clicking element 'xpath=//button[@id='product-addtocart-button']/span'.</msg>
+<msg time="2024-01-18T16:49:57.174599" level="INFO">Clicking element 'xpath=//button[@id='product-addtocart-button']/span'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-18T16:20:15.721813" elapsed="0.065906"/>
+<status status="PASS" start="2024-01-18T16:49:57.173559" elapsed="0.070486"/>
 </kw>
 <arg>xpath=//button[@id='product-addtocart-button']/span</arg>
-<status status="PASS" start="2024-01-18T16:20:15.721813" elapsed="0.065906"/>
+<status status="PASS" start="2024-01-18T16:49:57.173559" elapsed="0.070486"/>
 </kw>
-<status status="PASS" start="2024-01-18T16:20:01.601923" elapsed="14.186822"/>
+<kw name="Assert Cart">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:49:57.262587" level="INFO">${cart_items} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f1ae88600379b830d121d0282f7d1d07", element="497966061F36DEA72F73A73C62BB9924_element_95")&gt;]</msg>
+<var>${cart_items}</var>
+<arg>xpath=//header/div[2]/div[1]/a[1]/span[2]/span[1]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-01-18T16:49:57.245071" elapsed="0.017516"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-01-18T16:49:57.262587" level="INFO">Length is 1.</msg>
+<msg time="2024-01-18T16:49:57.262587" level="INFO">${item_count} = 1</msg>
+<var>${item_count}</var>
+<arg>${cart_items}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-01-18T16:49:57.262587" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-01-18T16:49:57.263556" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${item_count}</arg>
+<arg>1</arg>
+<arg>Le nombre d'éléments dans le panier n'est pas égal à 1</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-01-18T16:49:57.262587" elapsed="0.000969"/>
+</kw>
+<status status="PASS" start="2024-01-18T16:49:57.245071" elapsed="0.018485"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-18T16:50:02.264969" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-18T16:49:57.263556" elapsed="5.001413"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:50:02.264969" level="INFO">Clicking element 'xpath=(.//*[normalize-space(text()) and normalize-space(.)='My Cart'])[1]/following::span[1]'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-18T16:50:02.264969" elapsed="0.083417"/>
+</kw>
+<arg>xpath=(.//*[normalize-space(text()) and normalize-space(.)='My Cart'])[1]/following::span[1]</arg>
+<status status="PASS" start="2024-01-18T16:50:02.264969" elapsed="0.083417"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-18T16:50:07.349833" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-18T16:50:02.349374" elapsed="5.000459"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-18T16:50:07.349833" level="INFO">Clicking element 'xpath=//div[@id='minicart-content-wrapper']/div[2]/div[5]/div/a/span'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-18T16:50:07.349833" elapsed="2.680378"/>
+</kw>
+<arg>xpath=//div[@id='minicart-content-wrapper']/div[2]/div[5]/div/a/span</arg>
+<status status="PASS" start="2024-01-18T16:50:07.349833" elapsed="2.680378"/>
+</kw>
+<status status="PASS" start="2024-01-18T16:49:37.931602" elapsed="32.098609"/>
 </test>
-<status status="PASS" start="2024-01-18T16:20:01.414443" elapsed="14.376277"/>
+<status status="PASS" start="2024-01-18T16:49:37.721541" elapsed="32.308670"/>
 </suite>
 <statistics>
 <total>
