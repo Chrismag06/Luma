@@ -10,7 +10,7 @@ Logout
 *** Settings ***
 Library    SeleniumLibrary
 Test Setup    Open Browser    https://www.google.com/    chrome
-Test Teardown    Close Browser
+# Test Teardown    Close Browser
 
 *** Variables ***
 ${BROWSER}    chrome
@@ -24,12 +24,19 @@ robotframework-testing_selenium
     ...              AND   Set Selenium Speed  ${SELSPEED}
     # open    https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/
     click    xpath=//div[2]/div/input
-    type    xpath=//div[2]/div/input    userone@gmail44.com
+    type     xpath=//div[2]/div/input    userone@gmail44.com
     click    id=pass
-    type    id=pass    wB24NxC!y.Ers@y
+    type     id=pass    wB24NxC!y.Ers@y
     click    id=send2
-    open    https://magento.softwaretestingboard.com/
-    [Teardown]  Close Browser
+    open     https://magento.softwaretestingboard.com/
+    open     https://magento.softwaretestingboard.com/women/tops-women/jackets-women.html
+    open    https://magento.softwaretestingboard.com/olivia-1-4-zip-light-jacket.html
+    click    id=option-label-color-93-item-49
+    click    id=option-label-size-143-item-169
+    click    xpath=//button[@id='product-addtocart-button']/span
+    [Documentation]  Test du panier
+    
+    #[Teardown]  Close Browser
 
 *** Keywords ***
 open
