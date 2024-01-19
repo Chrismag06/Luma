@@ -6,7 +6,6 @@ Modification du panier (edit/suppression)
 Assert
 Logout
 
-
 *** Settings ***
 Library    SeleniumLibrary
 Test Setup    Open Browser    https://www.google.com/    chrome
@@ -35,6 +34,7 @@ robotframework-testing_selenium
     Assert Cart After Update Quantity
     Remove Article
     Sleep  5s
+    Assert Cart After Delete
     [Teardown]  Close Browser
 
 *** Keywords ***
@@ -65,9 +65,12 @@ Assert Cart
     Should Be Equal As Numbers    ${item_count}    1    Le nombre d'éléments dans le panier n'est pas égal à 1
 
 Assert Cart After Update Quantity
-    ${cart_items} =    Get WebElements    xpath=//html[1]/body[1]/div[2]/main[1]/div[3]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/div[1]/label[1]/input[1]
-    ${item_count} =    Get Length    ${cart_items}
-    Should Be Equal As Numbers    ${item_count}    6    Le nombre d'éléments dans le panier n'est pas égal à 6
+    ${item_count} =    Get Text  xpath=//header/div[2]/div[1]/a[1]/span[2]/span[1]
+    Should Be Equal As Numbers    ${item_count}    5    Le nombre d'éléments dans le panier n'est pas égal à 5
+
+Assert Cart After Delete
+    ${item_count} =    Get Text  xpath=//header/div[2]/div[1]/a[1]/span[2]/span[1]
+    Should Be Equal As Numbers    ${item_count}    0    Le panier n'est pas vide en fait
 
 Update Quantity
     Log To Console  Update quantity
@@ -75,6 +78,9 @@ Update Quantity
     type    xpath=//html[1]/body[1]/div[2]/main[1]/div[3]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/div[1]/label[1]/input[1]  5
     click    xpath=//table[@id='shopping-cart-table']/tbody/tr/td[3]
     click    xpath=//form[@id='form-validate']/div[2]/button[2]/span
+    Sleep  5s
+    ${item_count} =    Get Element Attribute    xpath=//html[1]/body[1]/div[2]/main[1]/div[3]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/div[1]/label[1]/input[1]  attribute=value
+    Log To Console  Nombre d'élément dans le panier ${item_count}
 
 Open Basket Page
     Log To Console  Open Basket Page
