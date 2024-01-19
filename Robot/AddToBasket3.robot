@@ -44,14 +44,6 @@ type
     [Arguments]    ${element}    ${value}
     Input Text     ${element}    ${value}
 
-selectAndWait
-    [Arguments]        ${element}  ${value}
-    Select From List   ${element}  ${value}
-
-select
-    [Arguments]        ${element}  ${value}
-    Select From List   ${element}  ${value}
-
 verifyValue
     [Arguments]                  ${element}  ${value}
     Element Should Contain       ${element}  ${value}
